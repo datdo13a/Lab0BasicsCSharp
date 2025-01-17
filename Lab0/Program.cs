@@ -1,6 +1,6 @@
 ﻿/*
  * CPRG 211 B Lab 0
- * Author: Jolanta
+ * Author: Dat Do-Nguyen
  * When: Winter 2025
  */
 
@@ -10,6 +10,7 @@ using System.Runtime.InteropServices.Marshalling;
 
 int low, high;
 int diff; // difference between low and  high
+double digit;
 
 // get positive low number 
 // get high number that is greater than low
@@ -20,6 +21,10 @@ high = Utilities.GetIntInRange("high number", low + 1, Int32.MaxValue);
 // calculate and print difference between low and high
 diff = high - low;
 Console.WriteLine($"Difference between {low} and {high} is {diff}");
+
+//use double instead of int
+digit = diff + 0.1;
+Console.WriteLine($"An example of the use of double and the result is = {digit}");
 
 // create an array and store number between low and high (inclusive)
 int[] numbers = new int[diff + 1];
